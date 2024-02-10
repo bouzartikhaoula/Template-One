@@ -1,3 +1,6 @@
+:root{
+  --main-coler:#10cab7;
+}
 * {
   box-sizing: border-box;
 }
@@ -6,15 +9,12 @@ body {
   font-family: "work Sans", sans-serif;
 }
 
-
-
 .container {
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
-
 
 /*small*/
 @media (min-width: 768px) {
@@ -37,7 +37,7 @@ body {
   }
 }
 
-/* start header */
+/*------------------ start header ------------------*/
 .header {
   padding: 20px;
 }
@@ -72,7 +72,8 @@ body {
 
 .header .link .icon span:first-child {
   height: 3px;
-  width: 100%;}
+  width: 100%;
+}
 
 .header .link .icon span:nth-child(2) {
   height: 3px;
@@ -82,8 +83,97 @@ body {
 
 .header .link .icon span:nth-child(3) {
   height: 5px;
-  width: 100%;}
-  .header .link:hover .icon span:nth-child(2) {
-   width: 100%;
-  
-  }
+  width: 100%;
+}
+
+.header .link:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+/* link list */
+.header .link ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 6px;
+  min-width: 200px;
+  position: absolute;
+  right: 0;
+  top: calc(100%+15px);
+  background-color: #f6f6f6;
+  display: none;
+  z-index: 1;
+}
+
+.header .link:hover ul {
+  display: block;
+
+}
+
+.header .link ul::before {
+  content: "";
+  border: 10px solid;
+  position: absolute;
+  right: 0px;
+  top: -20px;
+  border-color: transparent transparent #f6f6f6 transparent;
+}
+
+.header .link ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.header .link ul li a:hover {
+  padding-left: 25px;
+}
+
+.header .link ul li:not(:last-child) a {
+  border-bottom: 2px solid;
+  border-bottom-color: #e4e4e4;
+
+}
+
+/*------------------ end header ------------------*/
+/*------------------ start  landing ------------------*/
+.landing {
+  background-image: url(../imege/landing.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+
+}
+.landing .intro-text{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50% );
+text-align: center;
+width: 320px;
+max-width: 100%;
+
+}
+.landing .intro-text h1{
+margin: 0;
+font-weight: bold;
+font-size: 50px;
+color: var(--main-coler);
+}
+.landing .intro-text p{
+  font-size: 19px;
+  line-height: 1.8;
+  color: #fffefe;
+
+}
+.landing .intro-text p .a{
+  font-size: 19px;
+  line-height: 1.8;
+  color:#fffefe;
+}
+
+
+
+/*------------------ end  landing ------------------*/
