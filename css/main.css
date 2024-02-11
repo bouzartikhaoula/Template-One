@@ -1,6 +1,7 @@
-:root{
-  --main-coler:#10cab7;
+:root {
+  --main-coler: #10cab7;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -103,6 +104,7 @@ body {
   background-color: #f6f6f6;
   display: none;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .header .link:hover ul {
@@ -146,34 +148,69 @@ body {
   position: relative;
 
 }
-.landing .intro-text{
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50% );
-text-align: center;
-width: 320px;
-max-width: 100%;
+
+.landing .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
 
 }
-.landing .intro-text h1{
-margin: 0;
-font-weight: bold;
-font-size: 50px;
-color: var(--main-coler);
+
+.landing .intro-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--main-coler);
 }
-.landing .intro-text p{
+
+.landing .intro-text p {
   font-size: 19px;
   line-height: 1.8;
   color: #fffefe;
 
 }
-.landing .intro-text p .a{
-  font-size: 19px;
-  line-height: 1.8;
-  color:#fffefe;
-}
+
 
 
 
 /*------------------ end  landing ------------------*/
+/*------------------ start features  ------------------*/
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+
+}
+
+.features .feat {
+  padding: 20px;
+  text-align: center;
+}
+
+.features .feat i {
+  color: var(--main-coler);
+}
+
+.features .feat h3 {
+  font-weight: 800px;
+  margin: 30px 0;
+}
+
+.features .feat P {
+  line-height: 1.8;
+  color: #777;
+  font-size: 17px;
+}
+
+/*------------------ end features  ------------------*/
