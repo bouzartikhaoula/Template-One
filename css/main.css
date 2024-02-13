@@ -21,6 +21,7 @@ body {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+
   }
 }
 
@@ -200,6 +201,8 @@ body {
 
 .features .feat i {
   color: var(--main-coler);
+  font-size: 27px;
+
 }
 
 .features .feat h3 {
@@ -214,3 +217,40 @@ body {
 }
 
 /*------------------ end features  ------------------*/
+/* start components */
+.spectiol-heading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.spectiol-heading+p {
+  margin: -30px 0 0;
+  font-size: 22px;
+  text-align: center;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .spectiol-heading {
+    font-size: 75px;
+  }
+
+  .spectiol-heading+p {
+    font-size: 19px;
+  }
+}
+
+/* end components */
+
+/* start services */
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+/* end services */
