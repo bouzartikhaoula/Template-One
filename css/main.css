@@ -253,4 +253,80 @@ body {
 
 }
 
+.services .services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 100px;
+
+}
+
+.services .services-content .srv {
+  display: flex;
+  margin-top: 100px;
+}
+
+@media (max-width:699PX) {
+  .services .services-content .srv .text{
+    flex-direction: column;
+    text-align: center;
+  }
+  .services .services-content .srv .h3{
+    flex-direction: column;
+    margin-right: 167px;
+  }
+}
+
+.services .services-content .srv i {
+  color: var(--main-coler);
+  flex-basis: 40px;
+  /*content width */
+  margin-top: 2px;
+  font-size: 30px;
+
+
+}
+
+.services .services-content P {
+  margin: 10px 0;
+  max-width: 300px;
+  color: #777;
+}
+
+.services .services-content .text {
+  flex: 1;
+  margin: 0;
+  justify-content: center;
+}
+
+.services h3 {
+  margin: 0px;
+}
+
+.services .image {
+
+  position: relative;
+  text-align: center;
+}
+
+.services .image img {
+  width: 260px;
+  margin-top: 20px;
+}
+
+.services .image::before {
+  content: "";
+  background-color: #333;
+  width: 30px;
+  height: calc(100% + 100px);
+  position: absolute;
+  top:-50px;
+right: 0;
+z-index: -1;
+
+}
+@media(max-width:1199px){
+.imege-media  {
+  display: none;
+}}
 /* end services */
